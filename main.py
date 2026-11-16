@@ -163,9 +163,9 @@ class QuizGame:
 
         accuracy = (score / total) * 100
         print(f"정답률: {accuracy:.1f}%")
-        
+
         if score == total:
-        print("축하합니다! 모든 문제를 맞혔습니다!")
+            print("축하합니다! 모든 문제를 맞혔습니다!")
 
         if self.best_score is None or score > self.best_score:
             self.best_score = score
