@@ -101,3 +101,5 @@ python_quiz_game/
 - 정답률 60% 출력 확인
 - 최고 점수 유지 확인
 - Git 브랜치 생성 및 main 병합 완료
+## Git clone 실습 기록
+GitHub 저장소를 복제하여 README를 수정하고 변경사항을 업로드했습니다.
