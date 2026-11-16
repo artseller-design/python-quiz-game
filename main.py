@@ -143,8 +143,12 @@ class QuizGame:
         if not self.quizzes:
             print("등록된 퀴즈가 없습니다. 먼저 퀴즈를 추가하세요.")
             return
+        
         score = 0
         total = len(self.quizzes)
+
+        print(f"\n총 {total}개의 문제가 준비되어 있습니다.")
+
         for index, quiz in enumerate(self.quizzes, start=1):
             print(f"\n--- 문제 {index}/{total} ---")
             quiz.show()
