@@ -161,6 +161,9 @@ class QuizGame:
 
         print(f"\n게임 종료! {total}문제 중 {score}문제를 맞혔습니다.")
 
+        wrong_count = total - score
+        print(f"틀린 문제 수: {wrong_count}개")
+
         accuracy = (score / total) * 100
         print(f"정답률: {accuracy:.1f}%")
 
