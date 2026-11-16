@@ -160,6 +160,10 @@ class QuizGame:
                 print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
 
         print(f"\n게임 종료! {total}문제 중 {score}문제를 맞혔습니다.")
+
+        accuracy = (score / total) * 100
+        print(f"정답률: {accuracy:.1f}%")
+        
         if self.best_score is None or score > self.best_score:
             self.best_score = score
             print("새로운 최고 점수입니다!")
