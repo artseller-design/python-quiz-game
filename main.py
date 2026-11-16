@@ -166,6 +166,12 @@ class QuizGame:
 
         if score == total:
             print("축하합니다! 모든 문제를 맞혔습니다!")
+        elif accuracy >= 80:
+            print("훌륭합니다! 거의 모든 문제를 맞혔습니다.")
+        elif accuracy >= 60:
+            print("잘하셨습니다! 조금만 더 연습해 보세요.")
+        else:
+            print("다시 도전해 보세요! 복습하면 더 잘할 수 있습니다.")
 
         if self.best_score is None or score > self.best_score:
             self.best_score = score
